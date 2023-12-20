@@ -1,10 +1,7 @@
-export default function RootLayout({ children, auth, params: { lang } }) {
+export default function RootLayout({ children, params: { lang } }) {
   return (
     <html lang={lang}>
-      <body>
-        {auth}
-        {children}
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
